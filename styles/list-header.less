@@ -1,0 +1,44 @@
+@import 'ui-variables';
+
+.list-header {
+  order: -1; // the column is a flex container: show before the list
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 16px 12px 31px; // title aligned with the avatars of mailspring-plugin-avatars
+  background: @background-primary;
+  h1 {
+    margin: 0;
+    font-size: 17px;
+    line-height: 22px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    color: @text-color;
+  }
+  .list-header-titles { flex: 1; min-width: 0; }
+  .list-header-subtitle {
+    font-size: 12.5px;
+    line-height: 16px;
+    color: @text-color-subtle;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+.list-header-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: @text-color-subtle;
+  cursor: default;
+  &:hover { background: fade(@text-color, 6%); }
+  &:active { background: fade(@text-color, 10%); }
+  &:focus-visible { outline: 2px solid fade(@accent-primary, 60%); outline-offset: 1px; }
+}

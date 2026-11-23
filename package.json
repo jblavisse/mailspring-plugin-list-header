@@ -1,0 +1,15 @@
+{
+  "name": "mailspring-plugin-list-header",
+  "displayName": "List Header",
+  "version": "1.0.0",
+  "description": "A header above Mailspring's thread and drafts lists: folder name, account and a compose button.",
+  "main": "./lib/main",
+  "license": "GPL-3.0-or-later",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jblavisse/mailspring-plugin-list-header"
+  },
+  "engines": { "mailspring": ">=1.26.0" },
+  "windowTypes": { "default": true },
+  "private": true
+}
